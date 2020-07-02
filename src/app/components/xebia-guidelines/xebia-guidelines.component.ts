@@ -83,7 +83,6 @@ export class XebiaGuidelinesComponent implements OnInit {
 
       next: (resultCombat) => {
         this.textDataToBeDisplayedHeadline=resultCombat
-      console.log(resultCombat);
       
       }
     })
@@ -92,9 +91,7 @@ export class XebiaGuidelinesComponent implements OnInit {
 
     this.textService.getTextDataTravel().subscribe({
 
-      next: (resultTravel) => {
-        console.log(resultTravel);
-        
+      next: (resultTravel) => {        
         this.textDataToBeDisplayedTravel = resultTravel.split("\n")
         this.textCountTravel = this.textDataToBeDisplayedTravel.length;
         this.textDataToBeDisplayedTravel.splice(this.textCountTravel - 1, this.textCountTravel)
@@ -107,7 +104,6 @@ export class XebiaGuidelinesComponent implements OnInit {
 
       next: (resultCombat) => {
         this.textDataToBeDisplayedTravelHeadline=resultCombat
-      console.log(resultCombat);
       
       }
     })
@@ -117,7 +113,6 @@ export class XebiaGuidelinesComponent implements OnInit {
     this.textService.getTextDataSocialDistance().subscribe({
 
       next: (resultSocial) => {
-        console.log(resultSocial);
         this.textDataToBeDisplayedSocial = resultSocial.split("\n")
         this.textCountSocial = this.textDataToBeDisplayedSocial.length;
         this.textDataToBeDisplayedSocial.splice(this.textCountSocial-1, this.textCountSocial)
@@ -136,7 +131,6 @@ export class XebiaGuidelinesComponent implements OnInit {
     this.textService.gettextData21().subscribe({
 
       next: (resultSocial) => {
-        console.log(resultSocial);
         this.textDataToBeDisplayed21 = resultSocial.split("\n")       
         this.textCount21 = this.textDataToBeDisplayed21.length;        
         this.textDataToBeDisplayed21.splice(this.textCount21-1, this.textCount21)        
@@ -147,7 +141,6 @@ export class XebiaGuidelinesComponent implements OnInit {
     this.textService.gettextData22().subscribe({
 
       next: (resultSocial) => {
-        console.log(resultSocial);
         this.textDataToBeDisplayed22 = resultSocial.split("\n")       
         this.textCount22 = this.textDataToBeDisplayed22.length;        
         this.textDataToBeDisplayed22.splice(this.textCount22-1, this.textCount22)        
@@ -159,7 +152,6 @@ export class XebiaGuidelinesComponent implements OnInit {
     this.textService.gettextData23().subscribe({
 
       next: (resultSocial) => {
-        console.log(resultSocial);
         this.textDataToBeDisplayed23 = resultSocial.split("\n")       
         this.textCount23 = this.textDataToBeDisplayed23.length;        
         this.textDataToBeDisplayed23.splice(this.textCount23-1, this.textCount23)        
@@ -170,7 +162,6 @@ export class XebiaGuidelinesComponent implements OnInit {
     this.textService.gettextData31().subscribe({
 
       next: (resultSocial) => {
-        console.log(resultSocial);
         this.textDataToBeDisplayed31 = resultSocial.split("\n")       
         this.textCount31 = this.textDataToBeDisplayed31.length;        
         this.textDataToBeDisplayed31.splice(this.textCount31-1, this.textCount31)        
@@ -181,7 +172,6 @@ export class XebiaGuidelinesComponent implements OnInit {
     this.textService.gettextData32().subscribe({
 
       next: (resultSocial) => {
-        console.log(resultSocial);
         this.textDataToBeDisplayed32 = resultSocial.split("\n")       
         this.textCount32 = this.textDataToBeDisplayed32.length;        
         this.textDataToBeDisplayed32.splice(this.textCount32-1, this.textCount32)        
@@ -191,7 +181,6 @@ export class XebiaGuidelinesComponent implements OnInit {
 
     this.textService.gettextData33().subscribe({
       next: (resultSocial) => {
-        console.log(resultSocial);
         this.textDataToBeDisplayed33 = resultSocial.split("\n")       
         this.textCount33 = this.textDataToBeDisplayed33.length;        
         this.textDataToBeDisplayed33.splice(this.textCount33-1, this.textCount33)  
