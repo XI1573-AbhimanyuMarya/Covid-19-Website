@@ -1,0 +1,36 @@
+<div class="container">
+    <p>
+        <a href="" class="btn btn-primary my-2 p-2 m-2">Home Page</a>
+    </p>
+    <div class="jumbotron">
+        <h1 class="display-6">Xebia Covid-19 Country wise Tracker</h1>
+
+        <div class="mx-auto">
+
+            <div class="form-group col-lg-4">
+                <label for="c">
+                    <h5> Select Country </h5>
+                </label>
+                <select name="" class="form-control" id="c" #input (change)='updateValues(input.value)'>
+                    // on change it takes input & run method
+                    <option disabled selected value> -- select an option -- </option>
+                    <option value="{{country}}" *ngFor='let country of countryList'>{{country}}</option>
+
+                </select>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+    <div class="statistic">
+
+        <app-country-dashboard [totalConfirmed]="totalConfirmed" [totalDeaths]="totalDeaths"
+            [totalRecovered]="totalRecovered" [totalActive]="totalActive">
+        </app-country-dashboard>
+    </div>
+
+
+</div>

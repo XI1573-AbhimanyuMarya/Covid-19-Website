@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+.float-lower-left {
+    position: relative;
+    float: right;
+    right: 1em;
+    top: 1.2em;
+    /* push it up into the element before it. This is a trick for bottom-right */
+    right: 1em;
+    z-index: 200;
+    opacity: 0.5;
+    font-weight:bolder;
+  }

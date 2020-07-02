@@ -1,0 +1,33 @@
+<div class="">
+  <p>
+    <a href="" class="btn btn-primary my-2 p-2 m-2">Home</a>
+    </p>
+  <div class="jumbotron">
+    <h1>Xebia Covid-19 Tracker</h1>
+    <hr>
+   
+    <app-country-dashboard 
+    [totalConfirmed]="totalConfirmed"
+    [totalDeaths]="totalDeaths"
+    [totalRecovered]="totalRecovered"
+    [totalActive]="totalActive"
+    
+    ></app-country-dashboard>
+
+
+  </div>
+
+
+  <h5>#IndiaFightsCorona    #XebiaFightsCorona</h5>
+</div>
+
+<div class="row">
+  <google-chart [data]="pieChart"></google-chart>
+  <div class="col" style="width: 70%">
+    <google-chart [data]="columnChart"></google-chart>  
+  </div>
+</div>
+
+
+
+
