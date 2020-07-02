@@ -1,0 +1,10 @@
+.scrollable{
+    overflow-y: auto;
+    max-height: 270px;
+  }
+
+  .card{
+    width: 96%;
+    height: 370px;
+    margin: 30px auto;
+  }
