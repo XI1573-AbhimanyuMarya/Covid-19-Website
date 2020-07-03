@@ -1,6 +1,8 @@
 .scrollable{
+    
     overflow-y: auto;
     max-height: 270px;
+    
   }
 
   .card{
@@ -8,11 +10,14 @@
     height: 370px;
     margin: 30px auto;
 
+
   }
 
   .jumbotron {
     
-    height: 400px;
+    height: 570px;
+    background-image: url("../../../assets/bb.jpg");
+    background-size: cover;
 }
 
 p {
@@ -25,4 +30,37 @@ p {
 
 .alert{
   font-size:20px;
+}
+
+.container{
+  text-align: center;
+}
+
+.hello{
+  font-size: 2em;
+	text-transform: capitalize;
+	letter-spacing: 1px;
+	margin-bottom: 1em;
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow:  0px 0px 25px -22px black;
+  transition: 0.3s;
+  
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgb(161, 157, 151);
+}
+
+.Aligner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Aligner-item {
+  max-width: 100%;
 }

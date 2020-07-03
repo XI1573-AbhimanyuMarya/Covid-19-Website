@@ -17,7 +17,7 @@ export class HomeComponent implements OnInit {
     chartType: "PieChart"
   }
   columnChart: GoogleChartInterface = {
-    chartType: "columnChart"
+    chartType: "ColumnChart"
   }
 
   gobalData: GlobalDataSummary[];
@@ -28,7 +28,7 @@ export class HomeComponent implements OnInit {
   initChart() {
 
     let dataTable = [];
-    dataTable.push(["Country ", "Cases"])
+    dataTable.push(["Country","Cases"])
     this.gobalData.forEach(pieIterator => {
       if(pieIterator.confirmed>100000)
       {

@@ -1,47 +1,42 @@
 <main role="main">
-
     <section class="jumbotron text-center">
-      <div class="container">
+      <div class="Aligner">
+      <div class="Aligner-item">
         <h1 class="display-2">{{textHeadlineToBeDisplayed}}</h1>
         <p class="lead text-muted">{{textHeadlineSummaryToBeDisplayed}}</p>
-        <p>
-          <a href="data" class="btn btn-outline-primary my-2 p-2 m-2">Covid Cases</a>
-          <a href="countries" class="btn btn-outline-primary my-2 p-2 m-2">Cases Per Country</a>
-          <a href="govermentGuidelines" class="btn btn-outline-primary my-2 p-2 m-2">Goverment Guidelines</a>
-          <!-- <a href="creator" class="btn btn-outline-primary my-2 p-2 m-2"> Creator</a> -->
-        </p>
       </div>
+    
+    </div>
     </section>
 
-    <div class="album py-2 bg-secondary">
+    <div class="album py-2">
       <div class="container-fluid">
-
         <div class="row">
           <div class="col-md-4 ">
-            <div class="card mb-4 box-shadow">
-              <div class="card-body"> <h4 class="alert alert-primary">{{textDataToBeDisplayedHeadline}}</h4>
+            <div class="card mb-4" >
+              <div class="card-body"> <h4 class="hello">{{textDataToBeDisplayedHeadline}}</h4>
                 <div class="scrollable">
-                <p class="card-text" *ngFor= 'let Traveldata of textDataToBeDisplayedTravel'> 
-                  <li class="list-group-item ">{{Traveldata}}</li></p>
+                <p class="card-text" style="font-size: 15px; margin-right: 12px;" *ngFor='let Traveldata of textDataToBeDisplayedTravel'> 
+                  <li class="list-group-item d-inline-block">{{Traveldata}}</li></p>
                   </div>
               </div>
             </div>
           </div>
           <div class="col-md-4">
-            <div class="card mb-4 box-shadow">
-              <div class="card-body"> <h4 class="alert alert-primary">{{textDataToBeDisplayedTravelHeadline}}</h4>
+            <div class="card mb-4 ">
+              <div class="card-body"> <h4 class="hello">{{textDataToBeDisplayedTravelHeadline}}</h4>
                 <div class="scrollable">
-                <p class="card-text" *ngFor= 'let combatdata of textDataToBeDisplayedCombat'> 
+                <p class="card-text" style="font-size: 15px; margin-right: 12px;" *ngFor= 'let combatdata of textDataToBeDisplayedCombat'> 
                   <li class="list-group-item d-inline-block">{{combatdata}}</li></p>
                   </div>
               </div>
             </div>
           </div>
           <div class="col-md-4">
-            <div class="card mb-4 box-shadow">
-              <div class="card-body"> <h4 class="alert alert-primary">{{textDataToBeDisplayedSocialHeadline}}</h4>
+            <div class="card mb-4 ">
+              <div class="card-body"> <h4 class="hello">{{textDataToBeDisplayedSocialHeadline}}</h4>
                 <div class="scrollable">
-                <p class="card-text" *ngFor= 'let socialdata of textDataToBeDisplayedSocial'>
+                <p class="card-text" style="font-size: 15px; margin-right: 12px;" *ngFor= 'let socialdata of textDataToBeDisplayedSocial'>
                   <li class="list-group-item d-inline-block">{{socialdata}}</li></p>
                 </div>
                 </div>
@@ -49,10 +44,10 @@
           </div>
 
           <div class="col-md-4">
-            <div class="card mb-4 box-shadow">
-              <div class="card-body"> <h4 class="alert alert-primary">{{textDataToBeDisplayed21Headline}}</h4>
+            <div class="card mb-4 ">
+              <div class="card-body"> <h4 class="hello">{{textDataToBeDisplayed21Headline}}</h4>
                 <div class="scrollable">
-                <p class="card-text" *ngFor= 'let socialdata of textDataToBeDisplayed21'>
+                <p class="card-text" style="font-size: 15px; margin-right: 12px;" *ngFor= 'let socialdata of textDataToBeDisplayed21'>
                   <li class="list-group-item d-inline-block">{{socialdata}}</li></p>
                   </div>
               </div>
@@ -60,20 +55,20 @@
           </div>
 
           <div class="col-md-4">
-            <div class="card mb-4 box-shadow ">
-              <div class="card-body">  <h4 class="alert alert-primary">{{textDataToBeDisplayed22Headline}}</h4>
+            <div class="card mb-4  ">
+              <div class="card-body">  <h4 class="hello">{{textDataToBeDisplayed22Headline}}</h4>
                 <div class="scrollable">
-                <p class="card-text" *ngFor= 'let socialdata of textDataToBeDisplayed22'>
+                <p class="card-text" style="font-size: 15px; margin-right: 12px;" *ngFor= 'let socialdata of textDataToBeDisplayed22'>
                   <li class="list-group-item d-inline-block">{{socialdata}}</li></p>  
                   </div>
               </div>
             </div>
           </div>
           <div class="col-md-4">
-            <div class="card mb-4 box-shadow">
-              <div class="card-body"> <h4 class="alert alert-primary">{{textDataToBeDisplayed23Headline}}</h4>
+            <div class="card mb-4 ">
+              <div class="card-body"> <h4 class="hello">{{textDataToBeDisplayed23Headline}}</h4>
                 <div class="scrollable">
-                <p class="card-text" *ngFor= 'let socialdata of textDataToBeDisplayed23'>
+                <p class="card-text"  style="font-size: 15px; margin-right: 12px;" *ngFor= 'let socialdata of textDataToBeDisplayed23'>
                   <li class="list-group-item d-inline-block">{{socialdata}}</li></p> 
                   </div>    
               </div>
@@ -82,10 +77,10 @@
 
 
           <div class="col-md-4">
-            <div class="card mb-4 box-shadow">
-              <div class="card-body"> <h4 class="alert alert-primary">{{textDataToBeDisplayed31Headline}}</h4>
+            <div class="card mb-4 ">
+              <div class="card-body"> <h4 class="hello">{{textDataToBeDisplayed31Headline}}</h4>
                 <div class="scrollable">
-                <p class="card-text" *ngFor= 'let socialdata of textDataToBeDisplayed31'>
+                <p class="card-text" style="font-size: 15px; margin-right: 12px;" *ngFor= 'let socialdata of textDataToBeDisplayed31'>
                   <li class="list-group-item d-inline-block">{{socialdata}}</li></p>              </div>
                   </div>
             </div>
@@ -93,10 +88,10 @@
 
 
           <div class="col-md-4">
-            <div class="card mb-4 box-shadow">
-              <div class="card-body"> <h4 class="alert alert-primary">{{textDataToBeDisplayed32Headline}}</h4>
+            <div class="card mb-4 ">
+              <div class="card-body"> <h4 class="hello">{{textDataToBeDisplayed32Headline}}</h4>
                 <div class="scrollable">
-                <p class="card-text" *ngFor= 'let socialdata of textDataToBeDisplayed32'>
+                <p class="card-text" style="font-size: 15px; margin-right: 12px;" *ngFor= 'let socialdata of textDataToBeDisplayed32'>
                   <li class="list-group-item d-inline-block">{{socialdata}}</li></p>    
                   </div> 
               </div>
@@ -104,10 +99,10 @@
           </div>
 
           <div class="col-md-4">
-            <div class="card mb-4 box-shadow">
-              <div class="card-body">  <h4 class="alert alert-primary">{{textDataToBeDisplayed33Headline}}</h4>
+            <div class="card mb-4 ">
+              <div class="card-body">  <h4 class="hello">{{textDataToBeDisplayed33Headline}}</h4>
                 <div class="scrollable">
-                <p class="card-text" *ngFor= 'let socialdata of textDataToBeDisplayed33'>
+                <p class="card-text" style="font-size: 15px; margin-right: 12px;" *ngFor= 'let socialdata of textDataToBeDisplayed33'>
                   <li class="list-group-item d-inline-block">{{socialdata}}</li></p> 
                   </div>
               </div>
