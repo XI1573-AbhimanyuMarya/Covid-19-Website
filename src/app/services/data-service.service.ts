@@ -58,17 +58,9 @@ private globalDataUrl;
             raw[cs.country] = cs;
           }
 
-
-
           data.push(raw)
 
-
-
-
         })
-
-
-
 
         return <GlobalDataSummary[]>Object.values(raw);
       })
