@@ -26,6 +26,9 @@ export class TextServiceService {
   private textData33Headline;
   private headline;
   private headlineSummary;
+  private imageFetch1;
+  private imageFetch2;
+  private imageFetch3;
 
   constructor(private http: HttpClient) { }
 
@@ -135,7 +138,10 @@ export class TextServiceService {
     return this.http.get(this.textDataTravel, { responseType: 'text' });
   }
 
-
+  getImageOne(){
+    this.imageFetch1="https://user-images.githubusercontent.com/67694005/86333220-3c735200-bc69-11ea-9a31-93439f689544.PNG";
+    return this.http.get(this.imageFetch1, {responseType: 'blob'});
+  }
 
 
 
