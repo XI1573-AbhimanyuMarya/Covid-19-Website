@@ -7,8 +7,11 @@
 
   .card{
     width: 96%;
-    height: 370px;
-    margin: 30px auto;
+	  min-height: 370px;
+  	margin: 30px auto;
+	  overflow-y: scroll;
+  	max-height: 370px;
+	  padding-bottom:1px ;
 
 
   }
@@ -37,10 +40,11 @@ p {
 }
 
 .hello{
-  font-size: 2em;
-	text-transform: capitalize;
-	letter-spacing: 1px;
-	margin-bottom: 1em;
+  font-size: 1.3em;
+  /* text-transform: capitalize; */
+ letter-spacing: 0.3px;
+ margin-bottom: 1em;
+ line-height: 20px;
 }
 
 .card {
